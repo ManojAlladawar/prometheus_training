@@ -1,1 +1,9 @@
 node_memory_MemFree_bytes
+node_memory_MemFree_bytes{env="Prod"}
+
+node_memory_MemFree_bytes{job="linuxnode1"}[1m]
+node_memory_MemFree_bytes{env!="Prod"}
+
+process_cpu_seconds_total
+
+process_cpu_seconds_total{job=~"linuxnode. *"}
